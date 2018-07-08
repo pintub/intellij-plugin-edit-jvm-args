@@ -1,0 +1,26 @@
+<idea-plugin>
+    <id>com.p2.intellij-plugin.save-aep-to-vm-args</id>
+    <name>save-aep-to-vm-args</name>
+    <vendor email="pintupnt542@gmail.com" url="https://github.com/pintub">P2</vendor>
+
+    <description><![CDATA[
+    save-aep-to-vm-args.<br>
+    ]]></description>
+
+    <idea-version since-build="173"/>
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>TestNG-J</depends> <!--Dependency on another plugin-->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <group id="SaveAepJobToVmArgsAction.SampleMenu" text="Save AEP Job To VM Args" description="save-aep-job-to-vm-args menu">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+            <action id="EnterAEPJob" class="SaveAepJobToVmArgsAction" text="Enter a AEP Job" description="Enter a AEP Job"/>
+        </group>
+    </actions>
+</idea-plugin>
