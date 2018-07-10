@@ -30,7 +30,8 @@ public class VmArgsUpdateUtil {
                 }
             }
         } else {
-            throw new IllegalArgumentException("Current vm arguments Pattern is not proper :" + oldVM);
+            throw new IllegalArgumentException("Current VM Arguments Pattern is not proper --> " + oldVM + "\n" +
+                    "Expected Pattern is --> " + VM_ARGS_PATTERN);
         }
 
         System.out.println("OldVM :" + oldVM);
